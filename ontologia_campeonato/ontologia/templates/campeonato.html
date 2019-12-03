@@ -8,5 +8,22 @@
 </head>
 <body>
     <h2>{{ title }}</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    <h3>Nome Atleta</h3>
+                </td>
+            </tr>
+        </thead>
+    {% for linha in resultado %}
+        <tr>
+            <td>
+                {{ linha.1 }}
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
 </body>
 </html>
