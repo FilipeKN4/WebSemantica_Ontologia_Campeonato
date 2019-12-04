@@ -1,0 +1,1201 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.campeonatobrasileirodefutebol.com/ontologies/campeonato.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.campeonatobrasileirodefutebol.com/ontologies/campeonato.owl">
+    <Prefix name="" IRI="http://www.campeonatobrasileirodefutebol.com/ontologies/campeonato.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="campeonato" IRI="http://www.campeonatobrasileirodefutebol.com/ontologies/campeonato.owl#"/>
+    <Declaration>
+        <Class IRI="#Atleta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Basquete"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Campeonato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CampeonatoEsportivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CampeonatoFutebolDeCampo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisputaEsportiva"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DisputaFutebolDeCampo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipeEsportiva"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipeFutebolDeCampo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Esporte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formula1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FuteVolei"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Futebol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FutebolDeAreia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FutebolDeCampo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FutebolParalimpico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FutebolSociety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Futsal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NaoVitoria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegraHibrida"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegraMataMata"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegraPontosCorridos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegrasCampeonato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resultado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Showbol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tenis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vitoria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volei"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#atletaDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#conduzidaPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#disputadoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eContempladoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eRegidoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#formadoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possuiAtleta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possuiDerrotado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possuiVencedor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temModalidadeDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#terminaEm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#vencidaPor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#possuiDataFim"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#possuiDataInicio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#possuiLocal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#possuiNome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arrascaeta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BrunoH"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BrunoHenrique"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DiegoAlves"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diogo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dudu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EvertonR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FelipeMelo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FilipeLuis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Final"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Flamengo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gabigol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gerson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jailson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Luan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LucasLima"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LuizAdriano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MarcosRocha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PabloMari"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palmeiras"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rafinha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegraCopaDoBrasil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RodrigoCaio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scarpa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VitorHugo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WillianArao"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Atleta"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#atletaDe"/>
+            <Class IRI="#Esporte"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atleta"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#possuiNome"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Basquete"/>
+        <Class IRI="#Esporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campeonato"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#eRegidoPor"/>
+            <Class IRI="#RegrasCampeonato"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campeonato"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#possuiDataFim"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campeonato"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#possuiDataInicio"/>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Campeonato"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#possuiLocal"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampeonatoEsportivo"/>
+        <Class IRI="#Campeonato"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampeonatoEsportivo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#formadoPor"/>
+            <Class IRI="#DisputaEsportiva"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampeonatoEsportivo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temModalidadeDe"/>
+            <Class IRI="#Esporte"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampeonatoFutebolDeCampo"/>
+        <Class IRI="#CampeonatoEsportivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampeonatoFutebolDeCampo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#formadoPor"/>
+            <Class IRI="#DisputaFutebolDeCampo"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CampeonatoFutebolDeCampo"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#temModalidadeDe"/>
+            <Class IRI="#FutebolDeCampo"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisputaEsportiva"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#disputadoPor"/>
+            <Class IRI="#EquipeEsportiva"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisputaEsportiva"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temModalidadeDe"/>
+            <Class IRI="#Esporte"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisputaEsportiva"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#terminaEm"/>
+            <Class IRI="#Resultado"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisputaFutebolDeCampo"/>
+        <Class IRI="#DisputaEsportiva"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisputaFutebolDeCampo"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#disputadoPor"/>
+            <Class IRI="#EquipeFutebolDeCampo"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisputaFutebolDeCampo"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#temModalidadeDe"/>
+            <Class IRI="#FutebolDeCampo"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DisputaFutebolDeCampo"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectProperty IRI="#disputadoPor"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Equipe"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#possuiNome"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquipeEsportiva"/>
+        <Class IRI="#Equipe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquipeEsportiva"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possuiAtleta"/>
+            <Class IRI="#Atleta"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquipeEsportiva"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temModalidadeDe"/>
+            <Class IRI="#Esporte"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquipeFutebolDeCampo"/>
+        <Class IRI="#EquipeEsportiva"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquipeFutebolDeCampo"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#possuiAtleta"/>
+            <Class IRI="#JogadorFutebolDeCampo"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquipeFutebolDeCampo"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#temModalidadeDe"/>
+            <Class IRI="#FutebolDeCampo"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquipeFutebolDeCampo"/>
+        <ObjectExactCardinality cardinality="11">
+            <ObjectProperty IRI="#possuiAtleta"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formula1"/>
+        <Class IRI="#Esporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FuteVolei"/>
+        <Class IRI="#Futebol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Futebol"/>
+        <Class IRI="#Esporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FutebolDeAreia"/>
+        <Class IRI="#Futebol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FutebolDeCampo"/>
+        <Class IRI="#Futebol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FutebolParalimpico"/>
+        <Class IRI="#Futebol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FutebolSociety"/>
+        <Class IRI="#Futebol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Futsal"/>
+        <Class IRI="#Futebol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <Class IRI="#Atleta"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#atletaDe"/>
+            <Class IRI="#FutebolDeCampo"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaoVitoria"/>
+        <Class IRI="#Resultado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegraHibrida"/>
+        <Class IRI="#RegrasCampeonato"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegraMataMata"/>
+        <Class IRI="#RegrasCampeonato"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegraPontosCorridos"/>
+        <Class IRI="#RegrasCampeonato"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Showbol"/>
+        <Class IRI="#Futebol"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tenis"/>
+        <Class IRI="#Esporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vitoria"/>
+        <Class IRI="#Resultado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vitoria"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possuiDerrotado"/>
+            <Class IRI="#EquipeEsportiva"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vitoria"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#possuiVencedor"/>
+            <Class IRI="#EquipeEsportiva"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volei"/>
+        <Class IRI="#Esporte"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Basquete"/>
+        <Class IRI="#Formula1"/>
+        <Class IRI="#Futebol"/>
+        <Class IRI="#Tenis"/>
+        <Class IRI="#Volei"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Campeonato"/>
+        <Class IRI="#DisputaEsportiva"/>
+        <Class IRI="#Equipe"/>
+        <Class IRI="#Esporte"/>
+        <Class IRI="#RegrasCampeonato"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RegraHibrida"/>
+        <Class IRI="#RegraMataMata"/>
+        <Class IRI="#RegraPontosCorridos"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#Arrascaeta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#BrunoH"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#BrunoHenrique"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CampeonatoFutebolDeCampo"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#DiegoAlves"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#Diogo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#Dudu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#EvertonR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#FelipeMelo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#FilipeLuis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DisputaFutebolDeCampo"/>
+        <NamedIndividual IRI="#Final"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EquipeFutebolDeCampo"/>
+        <NamedIndividual IRI="#Flamengo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FutebolDeCampo"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#Gabigol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#Gerson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#Jailson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#Luan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#LucasLima"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#LuizAdriano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#MarcosRocha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#PabloMari"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EquipeFutebolDeCampo"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#Rafinha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RegraMataMata"/>
+        <NamedIndividual IRI="#RegraCopaDoBrasil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#RodrigoCaio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#Scarpa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#VitorHugo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JogadorFutebolDeCampo"/>
+        <NamedIndividual IRI="#WillianArao"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#Arrascaeta"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#BrunoH"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#BrunoHenrique"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eRegidoPor"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+        <NamedIndividual IRI="#RegraCopaDoBrasil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#formadoPor"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+        <NamedIndividual IRI="#Final"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temModalidadeDe"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#DiegoAlves"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#Diogo"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#Dudu"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#EvertonR"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#FelipeMelo"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#FilipeLuis"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disputadoPor"/>
+        <NamedIndividual IRI="#Final"/>
+        <NamedIndividual IRI="#Flamengo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disputadoPor"/>
+        <NamedIndividual IRI="#Final"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temModalidadeDe"/>
+        <NamedIndividual IRI="#Final"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#Arrascaeta"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#BrunoH"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#DiegoAlves"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#EvertonR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#FilipeLuis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#Gabigol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#Gerson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#PabloMari"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#Rafinha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#RodrigoCaio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#WillianArao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temModalidadeDe"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#Gabigol"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#Gerson"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#Jailson"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#Luan"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#LucasLima"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#LuizAdriano"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#MarcosRocha"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#PabloMari"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#BrunoHenrique"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#Diogo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#Dudu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#FelipeMelo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#Jailson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#Luan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#LucasLima"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#LuizAdriano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#MarcosRocha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#Scarpa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#VitorHugo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temModalidadeDe"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#Rafinha"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#RodrigoCaio"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#Scarpa"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#VitorHugo"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#atletaDe"/>
+        <NamedIndividual IRI="#WillianArao"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Arrascaeta"/>
+        <Literal>Arrascaeta</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#BrunoH"/>
+        <Literal>Bruno Henrique</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#BrunoHenrique"/>
+        <Literal>Bruno Henrique</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiDataFim"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+        <Literal>30/10/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiDataInicio"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+        <Literal>01/02/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiLocal"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+        <Literal>Brasil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#DiegoAlves"/>
+        <Literal>Diego Alves</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Diogo"/>
+        <Literal>Diogo Barbosa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Dudu"/>
+        <Literal>Dudu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#EvertonR"/>
+        <Literal>Éverton Ribeiro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#FelipeMelo"/>
+        <Literal>Felipe Melo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#FilipeLuis"/>
+        <Literal>Filipe Luís</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <Literal>Clube de Regatas do Flamengo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Gabigol"/>
+        <Literal>Gabriel Barbosa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Gerson"/>
+        <Literal>Gérson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Jailson"/>
+        <Literal>Jailson</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Luan"/>
+        <Literal>Luan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#LucasLima"/>
+        <Literal>Lucas Lima</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#LuizAdriano"/>
+        <Literal>Luiz Adriano</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#MarcosRocha"/>
+        <Literal>Marcos Rocha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#PabloMari"/>
+        <Literal>Pablo Marí</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <Literal>Sociedade Esportiva Palmeiras</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Rafinha"/>
+        <Literal>Rafinha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#RodrigoCaio"/>
+        <Literal>Rodrigo Caio</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Scarpa"/>
+        <Literal>Scarpa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#VitorHugo"/>
+        <Literal>Vitor Hugo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#WillianArao"/>
+        <Literal>Willian Arão</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#conduzidaPor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#possuiVencedor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#terminaEm"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#eContempladoPor"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#eRegidoPor"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#temModalidadeDe"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#atletaDe"/>
+        <Class IRI="#Atleta"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#conduzidaPor"/>
+        <Class IRI="#DisputaEsportiva"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#disputadoPor"/>
+        <Class IRI="#DisputaEsportiva"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#eContempladoPor"/>
+        <Class IRI="#Campeonato"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#eRegidoPor"/>
+        <Class IRI="#Campeonato"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#formadoPor"/>
+        <Class IRI="#CampeonatoEsportivo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <Class IRI="#EquipeEsportiva"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possuiDerrotado"/>
+        <Class IRI="#Vitoria"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possuiVencedor"/>
+        <Class IRI="#Vitoria"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temModalidadeDe"/>
+        <ObjectUnionOf>
+            <Class IRI="#CampeonatoEsportivo"/>
+            <Class IRI="#DisputaEsportiva"/>
+            <Class IRI="#EquipeEsportiva"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#terminaEm"/>
+        <Class IRI="#DisputaEsportiva"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#vencidaPor"/>
+        <Class IRI="#Vitoria"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#atletaDe"/>
+        <Class IRI="#Esporte"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#disputadoPor"/>
+        <Class IRI="#EquipeEsportiva"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#eContempladoPor"/>
+        <Class IRI="#Equipe"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#eRegidoPor"/>
+        <Class IRI="#RegrasCampeonato"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#formadoPor"/>
+        <Class IRI="#DisputaEsportiva"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiAtleta"/>
+        <Class IRI="#Atleta"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiDerrotado"/>
+        <Class IRI="#EquipeEsportiva"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiVencedor"/>
+        <Class IRI="#EquipeEsportiva"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temModalidadeDe"/>
+        <Class IRI="#Esporte"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#terminaEm"/>
+        <Class IRI="#Resultado"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#vencidaPor"/>
+        <Class IRI="#EquipeEsportiva"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#possuiDataFim"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#possuiDataInicio"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#possuiNome"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Campeonato</IRI>
+        <Literal>Campeonato é uma competição que resulta na seleção de um competidor ou equipe com desempenho comparativamente superior. O vencedor de tal competição é denominado campeão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FuteVolei</IRI>
+        <Literal>O futevôlei pode ser disputado por duplas, trios ou times de quatro jogadores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FutebolDeAreia</IRI>
+        <Literal>O futebol de areia é disputado com times de 5 jogadores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FutebolDeCampo</IRI>
+        <Literal>O futebol de campo é disputado com 11 jogadores por cada equipe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FutebolParalimpico</IRI>
+        <Literal>As duas principais versões do futebol paralímpico são o futebol de cinco, para jogadores com deficiências visuais, e o futebol de sete, para atletas com paralisia cerebral.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FutebolSociety</IRI>
+        <Literal>Disputado com equipes formadas por 7 jogadores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Futsal</IRI>
+        <Literal>É disputado por equipes formadas por 5 jogadores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Showbol</IRI>
+        <Literal>Disputado com equipes formadas por 7 jogadores. Tem um campo cercado por paredes de acrílico e quando a bola bate nas paredes laterais, a bola segue em jogo.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
