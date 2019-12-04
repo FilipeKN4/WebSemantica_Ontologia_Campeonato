@@ -161,7 +161,7 @@
         <NamedIndividual IRI="#BrunoHenrique"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CopaDoBrasil"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#DiegoAlves"/>
@@ -219,6 +219,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Rafinha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RegraCopaDoBrasil"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#RodrigoCaio"/>
@@ -358,6 +361,13 @@
         <ObjectExactCardinality cardinality="2">
             <ObjectProperty IRI="#disputadoPor"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Equipe"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#possuiNome"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EquipeEsportiva"/>
@@ -523,7 +533,7 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CampeonatoFutebolDeCampo"/>
-        <NamedIndividual IRI="#CopaDoBrasil"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#JogadorFutebolDeCampo"/>
@@ -602,6 +612,10 @@
         <NamedIndividual IRI="#Rafinha"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#RegraMataMata"/>
+        <NamedIndividual IRI="#RegraCopaDoBrasil"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#JogadorFutebolDeCampo"/>
         <NamedIndividual IRI="#RodrigoCaio"/>
     </ClassAssertion>
@@ -633,9 +647,19 @@
         <NamedIndividual IRI="#FutebolDeCampo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eRegidoPor"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+        <NamedIndividual IRI="#RegraCopaDoBrasil"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#formadoPor"/>
-        <NamedIndividual IRI="#CopaDoBrasil"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
         <NamedIndividual IRI="#Final"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temModalidadeDe"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#atletaDe"/>
@@ -676,6 +700,11 @@
         <ObjectProperty IRI="#disputadoPor"/>
         <NamedIndividual IRI="#Final"/>
         <NamedIndividual IRI="#Palmeiras"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temModalidadeDe"/>
+        <NamedIndividual IRI="#Final"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#possuiAtleta"/>
@@ -833,6 +862,11 @@
         <NamedIndividual IRI="#VitorHugo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temModalidadeDe"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <NamedIndividual IRI="#FutebolDeCampo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#atletaDe"/>
         <NamedIndividual IRI="#Rafinha"/>
         <NamedIndividual IRI="#FutebolDeCampo"/>
@@ -873,6 +907,21 @@
         <Literal>Bruno Henrique</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#possuiDataFim"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+        <Literal>30/10/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiDataInicio"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+        <Literal>01/02/2020</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiLocal"/>
+        <NamedIndividual IRI="#CopaDoBrasil-2020"/>
+        <Literal>Brasil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#possuiNome"/>
         <NamedIndividual IRI="#DiegoAlves"/>
         <Literal>Diego Alves</Literal>
@@ -901,6 +950,11 @@
         <DataProperty IRI="#possuiNome"/>
         <NamedIndividual IRI="#FilipeLuis"/>
         <Literal>Filipe Luís</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Flamengo"/>
+        <Literal>Clube de Regatas do Flamengo</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#possuiNome"/>
@@ -941,6 +995,11 @@
         <DataProperty IRI="#possuiNome"/>
         <NamedIndividual IRI="#PabloMari"/>
         <Literal>Pablo Marí</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#possuiNome"/>
+        <NamedIndividual IRI="#Palmeiras"/>
+        <Literal>Sociedade Esportiva Palmeiras</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#possuiNome"/>

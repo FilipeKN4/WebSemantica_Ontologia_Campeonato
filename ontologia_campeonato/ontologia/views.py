@@ -11,23 +11,23 @@ def index(request):
 def index_campeonato(request):
     title = "Ontologia de Campeonato"
 
-    read_owl_file()
+    get_ontology("./owl_campeonato/campeonato.owl").load()
     table_title = ''
     query_result = []
 
     if request.POST:
-        print(request.POST['entidade'])
-        print(request.POST['propriedade_objeto'])
-        entidade =  request.POST['entidade']
-        propriedade_objeto = request.POST['propriedade_objeto']
+        entity =  request.POST['entidade']
+        object_property = request.POST['propriedade_objeto']
+        datatype_property = request.POST['propriedade_dado']
 
-        table_title = request.POST['entidade'].capitalize()
-        print(table_title)
+        table_title = request.POST['entidade']
         query_params = []
-        if entidade is not '':
-            query_params.append(entidade)
-        if propriedade_objeto is not '':
-            query_params.append(propriedade_objeto)
+        if entity is not '':
+            query_params.append(entity)
+        if object_property is not '':
+            query_params.append(object_property)
+        if datatype_property is not '':
+            query_params.append(datatype_property)
         query_result = make_query(query_params)
 
     template = loader.get_template('campeonato.html')
@@ -39,19 +39,6 @@ def index_campeonato(request):
 
     return HttpResponse(template.render(context, request))
 
-def read_owl_file():
-    # result = g.parse("./owl_campeonato/Campeonato-Final.owl")
-
-    # onto_path.append("./owl_campeonato/campeonato.owl")
-    get_ontology("./owl_campeonato/campeonato.owl").load()
-
-    # print(onto.CampeonatoEsportivo)
-    # print(onto.BrunoH.possuiNome)
-
-    # default_world.set_backend(filename = "./triples.sqlite3")
-    # default_world.save()
-
-
 def make_query(query_params):
     graph = default_world.as_rdflib_graph()
     result = []
@@ -62,14 +49,12 @@ def make_query(query_params):
                             SELECT ?{}
                             WHERE {} """.format(query_params[0], '{')+"?{} ".format(query_params[0])+"camp:{} ".format(query_params[1])+"?x .{}".format('}')
                             # +"{}".format(query_params[0])+" ?x .}"
-        print(string)
         result = list(graph.query(string))
-
-    # r = list(graph.query("""PREFIX ex: <http://www.campeonatobrasileirodefutebol.com/ontologies/campeonato.owl#>
-
-    #                         SELECT ?atleta ?possuinome
-    #                         WHERE {?atleta ex:atletaDe ?x ;
-    #                                ex:possuiNome ?possuinome}"""))
-    # print(r)
+    elif len(query_params) == 3:
+        string = """PREFIX camp: <http://www.campeonatobrasileirodefutebol.com/ontologies/campeonato.owl#>
+                            SELECT ?{} ?{}
+                            WHERE {} """.format(query_params[0], query_params[2], '{')+"?{} ".format(query_params[0])+"camp:{} ".format(query_params[1])+"?x ;"+"""
+                            camp:{} """.format(query_params[2])+"?{}{}".format(query_params[2], '}')
+        result = list(graph.query(string))   
 
     return result

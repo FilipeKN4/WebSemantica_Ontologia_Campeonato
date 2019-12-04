@@ -19,7 +19,7 @@
             <option value="equipe">Equipe</option>
             <option value="esporte">Esporte</option>
         </select>
-
+        <br>
         <label for="propriedade_objeto">Propriedade de Objeto: </label>
         <select name="propriedade_objeto" id="id_propriedade_objeto">
                 <option value="">-----</option>
@@ -36,6 +36,16 @@
             <option value="terminaEm">Termina Em</option>
             <option value="vencidaPor">Vencida Por</option>
         </select>
+        <br>
+        <label for="propriedade_dado">Propriedade de Dado: </label>
+        <select name="propriedade_dado" id="id_propriedade_dado">
+            <option value="">-----</option>
+            <option value="possuiDataInicio">Data Inicial</option>
+            <option value="possuiDataFim">Data Final</option>
+            <option value="possuiLocal">Possui Local</option>
+            <option value="possuiNome">Possui Nome</option>
+        </select>
+
         <input type="submit" value="OK">
     </form>
     
@@ -51,7 +61,11 @@
     {% for line in result %}
         <tr>
             <td>
-                {{ line }}
+                {% if line.1 %}
+                    {{ line.1 }}
+                {% else %}
+                    {{ line }}
+                {% endif %}
             </td>
         </tr>
     {% endfor %}
