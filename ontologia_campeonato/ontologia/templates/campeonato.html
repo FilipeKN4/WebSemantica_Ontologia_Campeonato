@@ -4,72 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>campeonato</title>
 </head>
 <body>
-    <h2>{{ title }}</h2>
+    <div class="container-fluid">
+        
+        <h2 class="text-center" style="margin-top: 30px;">{{ title }}</h2>
+            
+        <form action="/ontologia/" method="post">{% csrf_token %}
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-xs-6 col-md-3">
+                    <strong>
+                        <label for="entidade">Entidade: </label>
+                    </strong>
+                    <select class="form-control" name="entidade" id="id_entidade">
+                        <option value="">-----</option>
+                        <option value="atleta">Atleta</option>
+                        <option value="campeonato">Campeonato</option>
+                        <option value="disputa_esportiva">Disputa</option>
+                        <option value="equipe">Equipe</option>
+                        <option value="esporte">Esporte</option>
+                    </select>
+                </div>
+                
+                <div class="col-xs-6 col-md-4">
+                    <strong>
+                        <label for="propriedade_objeto">Propriedade de Objeto: </label>
+                    </strong>
+                    <select class="form-control" name="propriedade_objeto" id="id_propriedade_objeto">
+                            <option value="">-----</option>
+                        <option value="atletaDe">Atleta De</option>
+                        <option value="conduzidaPor">Conduzida Por</option>
+                        <option value="disputadoPor">Disputado Por</option>
+                        <option value="eContempladoPor">É Contemplado Por</option>
+                        <option value="eRegidoPor">É Regido Por</option>
+                        <option value="formadoPor">Formado Por</option>
+                        <option value="possuiAtleta">Possui Atleta</option>
+                        <option value="possuiDerrotado">Possui Derrotado</option>
+                        <option value="possuiVencedor">Possui Vencedor</option>
+                        <option value="temModalidadeDe">Tem Modalidade De</option>
+                        <option value="terminaEm">Termina Em</option>
+                        <option value="vencidaPor">Vencida Por</option>
+                    </select>
+                </div>
+        
+                <div class="col-xs-6 col-md-3">
+                    <strong>
+                        <label for="propriedade_dado">Propriedade de Dado: </label>
+                    </strong>
+                    <select class="form-control" name="propriedade_dado" id="id_propriedade_dado">
+                        <option value="">-----</option>
+                        <option value="possuiDataInicio">Data Inicial</option>
+                        <option value="possuiDataFim">Data Final</option>
+                        <option value="possuiLocal">Possui Local</option>
+                        <option value="possuiNome">Possui Nome</option>
+                    </select>
+                </div>
 
-    <form action="/ontologia/" method="post">{% csrf_token %}
-        <label for="entidade">Entidade: </label>
-        <select name="entidade" id="id_entidade">
-            <option value="">-----</option>
-            <option value="atleta">Atleta</option>
-            <option value="campeonato">Campeonato</option>
-            <option value="disputa_esportiva">Disputa</option>
-            <option value="equipe">Equipe</option>
-            <option value="esporte">Esporte</option>
-        </select>
-        <br>
-        <label for="propriedade_objeto">Propriedade de Objeto: </label>
-        <select name="propriedade_objeto" id="id_propriedade_objeto">
-                <option value="">-----</option>
-            <option value="atletaDe">Atleta De</option>
-            <option value="conduzidaPor">Conduzida Por</option>
-            <option value="disputadoPor">Disputado Por</option>
-            <option value="eContempladoPor">É Contemplado Por</option>
-            <option value="eRegidoPor">É Regido Por</option>
-            <option value="formadoPor">Formado Por</option>
-            <option value="possuiAtleta">Possui Atleta</option>
-            <option value="possuiDerrotado">Possui Derrotado</option>
-            <option value="possuiVencedor">Possui Vencedor</option>
-            <option value="temModalidadeDe">Tem Modalidade De</option>
-            <option value="terminaEm">Termina Em</option>
-            <option value="vencidaPor">Vencida Por</option>
-        </select>
-        <br>
-        <label for="propriedade_dado">Propriedade de Dado: </label>
-        <select name="propriedade_dado" id="id_propriedade_dado">
-            <option value="">-----</option>
-            <option value="possuiDataInicio">Data Inicial</option>
-            <option value="possuiDataFim">Data Final</option>
-            <option value="possuiLocal">Possui Local</option>
-            <option value="possuiNome">Possui Nome</option>
-        </select>
-
-        <input type="submit" value="OK">
-    </form>
-    
-    {% if result %}
-    <table>
-        <thead>
-            <tr>
+                <div class="col-xs-6 col-md-2 text-center">
+                        <input class="btn btn-success" style="margin-top: 31px;" type="submit" value="Pesquisar">
+                </div>
+            </div>  
+        </form>
+        
+        <table class="table table-bordered" style="margin-top: 50px; margin-bottom: 30px;">
+            <thead>
+                <tr class="text-center">
+                    <td>
+                        {% if result %}
+                            <h3>{{ table_title }}</h3>
+                        {% else %}
+                            <h3>sem resultados</h3>
+                        {% endif %}
+                    </td>
+                </tr>
+            </thead>
+        {% if result %}
+            {% for line in result %}
+                <tr class="text-center">
+                    <td>
+                        {% if line.1 %}
+                            {{ line.1 }}
+                        {% else %}
+                            {{ line }}
+                        {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        {% else %}
+            <tr class="text-center">
                 <td>
-                    <h3>{{ table_title }}</h3>
+                    -----
                 </td>
             </tr>
-        </thead>
-    {% for line in result %}
-        <tr>
-            <td>
-                {% if line.1 %}
-                    {{ line.1 }}
-                {% else %}
-                    {{ line }}
-                {% endif %}
-            </td>
-        </tr>
-    {% endfor %}
-    </table>
-    {% endif %}
+        {% endif %}
+        </table>
+    </div>
 </body>
 </html>
