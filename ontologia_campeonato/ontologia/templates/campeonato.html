@@ -9,21 +9,35 @@
 <body>
     <h2>{{ title }}</h2>
 
+    <form action="/ontologia/" method="post">{% csrf_token %}
+        <label for="entidade">Entidade: </label>
+        <select name="entidade" id="id_entidade">
+            <option value="atleta">Atleta</option>
+            <option value="campeonato">Campeonato</option>
+            <option value="disputa_esportiva">Disputa</option>
+            <option value="equipe">Equipe</option>
+            <option value="esporte">Esporte</option>
+        </select>
+        <input type="submit" value="OK">
+    </form>
+    
+    {% if result %}
     <table>
         <thead>
             <tr>
                 <td>
-                    <h3>Nome Atleta</h3>
+                    <h3>{{ table_title }}</h3>
                 </td>
             </tr>
         </thead>
-    {% for linha in resultado %}
+    {% for line in result %}
         <tr>
             <td>
-                {{ linha.1 }}
+                {{ line }}
             </td>
         </tr>
     {% endfor %}
     </table>
+    {% endif %}
 </body>
 </html>
