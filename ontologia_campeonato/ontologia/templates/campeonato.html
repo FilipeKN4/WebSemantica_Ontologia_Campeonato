@@ -12,11 +12,29 @@
     <form action="/ontologia/" method="post">{% csrf_token %}
         <label for="entidade">Entidade: </label>
         <select name="entidade" id="id_entidade">
+            <option value="">-----</option>
             <option value="atleta">Atleta</option>
             <option value="campeonato">Campeonato</option>
             <option value="disputa_esportiva">Disputa</option>
             <option value="equipe">Equipe</option>
             <option value="esporte">Esporte</option>
+        </select>
+
+        <label for="propriedade_objeto">Propriedade de Objeto: </label>
+        <select name="propriedade_objeto" id="id_propriedade_objeto">
+                <option value="">-----</option>
+            <option value="atletaDe">Atleta De</option>
+            <option value="conduzidaPor">Conduzida Por</option>
+            <option value="disputadoPor">Disputado Por</option>
+            <option value="eContempladoPor">É Contemplado Por</option>
+            <option value="eRegidoPor">É Regido Por</option>
+            <option value="formadoPor">Formado Por</option>
+            <option value="possuiAtleta">Possui Atleta</option>
+            <option value="possuiDerrotado">Possui Derrotado</option>
+            <option value="possuiVencedor">Possui Vencedor</option>
+            <option value="temModalidadeDe">Tem Modalidade De</option>
+            <option value="terminaEm">Termina Em</option>
+            <option value="vencidaPor">Vencida Por</option>
         </select>
         <input type="submit" value="OK">
     </form>
