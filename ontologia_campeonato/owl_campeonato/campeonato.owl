@@ -1155,8 +1155,28 @@
     </FunctionalDataProperty>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Atleta</IRI>
+        <Literal>É uma pessoa que pratica determinado esporte.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Campeonato</IRI>
-        <Literal>Campeonato é uma competição que resulta na seleção de um competidor ou equipe com desempenho comparativamente superior. O vencedor de tal competição é denominado campeão.</Literal>
+        <Literal>É uma disputa ou sucessão de disputas que resultam na seleção de um competidor ou equipe com desempenho comparativamente superior. O vencedor de tal competição é denominado &quot;campeão&quot;. Geralmente regido por regras.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DisputaEsportiva</IRI>
+        <Literal>É todo tipo de disputa regido sob as regras de determinado esporte. Sendo disputada por no mínimo duas equipes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Equipe</IRI>
+        <Literal>É formada por um ou mais indivíduos, que se juntam para alcançar um objetivo em comum, ser campeão de algum campeonato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Esporte</IRI>
+        <Literal>É uma prática metódica, individual ou coletiva, de jogo ou qualquer atividade que demande exercício físico e destreza. São exemplos de esportes: Basquete, Vôlei, Futebol, Fórmula 1, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1190,8 +1210,89 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegrasCampeonato</IRI>
+        <Literal>São um conjunto de restrições que auxiliam a definir o vencedor de um campeonato Basicamente, pode-se classificar as regras de campeonato em três grandes sistemas:
+
+Eliminatório (mata-mata) - cada dupla de equipes disputa um certo número de partidas entre si, até que um deles seja considerado vencedor e, portanto, promovido à próxima fase do torneio.
+
+Pontos Corridos - cada uma das equipes enfrenta todos as demais. Ao final, aquele que obtiver mais pontos é o campeão.
+
+Híbrido - considera-se como híbrido todo campeonato que não seja estruturado somente na forma de mata-mata ou pontos corridos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Resultado</IRI>
+        <Literal>É a consequência de uma disputa esportiva. Contemplando um Vencedor e ao menos um Não Vencedor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Showbol</IRI>
         <Literal>Disputado com equipes formadas por 7 jogadores. Tem um campo cercado por paredes de acrílico e quando a bola bate nas paredes laterais, a bola segue em jogo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#atletaDe</IRI>
+        <Literal>Propriedade simétrica que possui como domain Atleta e range Esporte.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#disputadoPor</IRI>
+        <Literal>Propriedade assimétrica que possui como domain DisputaEsportiva e range EquipeEsportiva.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#eContempladoPor</IRI>
+        <Literal>Propriedade transitiva que possui como domain Campeonato e range Equipe.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#eRegidoPor</IRI>
+        <Literal>Propriedade transitiva que possui como domain Campeonato e range RegrasCampeonato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#formadoPor</IRI>
+        <Literal>Propriedade que possui como domain CampeonatoEsportivo e range DisputaEsportiva.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#possuiAtleta</IRI>
+        <Literal>Propriedade que possui como domain EquipeEsportiva e range Atleta.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#possuiDataFim</IRI>
+        <Literal>Propriedade que se refere ao fim do Campeonato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#possuiDataInicio</IRI>
+        <Literal>Propriedade que se refere ao início do Campeonato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#possuiDerrotado</IRI>
+        <Literal>Propriedade que possui como domain Vitória e range EquipeEsportiva.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#possuiNome</IRI>
+        <Literal>Propriedade utilizada para nomear os atletas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#possuiVencedor</IRI>
+        <Literal>Propriedade que possui como domain Vitória e range EquipeEsportiva.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#temModalidadeDe</IRI>
+        <Literal>Propriedade transitiva que possui como domain CampeonatoEsportivo e range Esporte.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#terminaEm</IRI>
+        <Literal>Propriedade funcional que possui como domain DisputaEsportiva e range Resultado.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
